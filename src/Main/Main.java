@@ -5,7 +5,8 @@ public class Main {
         Produto p1 = new Produto("Camisa", 29.99);
         Produto p2 = new Produto("Calça", 49.99);
         
-        CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+        CalculoTotal calculator = new CalculoTotalSimples();
+        CarrinhoDeCompras carrinho = new CarrinhoDeComprasImpl(calculator);
         carrinho.adicionarProduto(p1);
         carrinho.adicionarProduto(p2);
 
