@@ -22,7 +22,7 @@ Este princípio fala que os módulos de alto e baixo nível devem depender de ab
 
 Neste código podemos observar uma violação deste princípio no método main, ao instanciar diretamente as classes Produto e CarrinhoDeCompras.
 
-Alterações:
+Alterações (branch Arrumado):
 
 2 - Para respeitar o segundo princípio, criamos uma interface para definir a função de cálculo do valor total, chamada CalculoTotal.
 
